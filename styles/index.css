@@ -348,3 +348,28 @@ input[type="range"]:active::-webkit-slider-thumb {
 .pagination>a:last-child {
     font-weight: 600;
 }
+
+
+/* Media Query */
+
+@media (max-width:600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .input-fields {
+        padding: 25px 20px;
+    }
+
+    .input-fields>div:first-of-type {
+        width: 100%;
+    }
+
+    .d-none {
+        display: none;
+    }
+}
