@@ -37,7 +37,7 @@ body {
 }
 
 .form-control:focus {
-    border: none;
+    border-color: var(--border-color);
     outline: none;
 }
 
