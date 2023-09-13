@@ -322,3 +322,29 @@ input[type="range"]:active::-webkit-slider-thumb {
     background-color: #ffffff;
     border: 1px solid var(--primary);
 }
+
+
+.pagination {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    display: flex;
+    gap: 10px;
+    transform: translateX(-50%);
+}
+
+
+.pagination>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+}
+
+.pagination>a.active {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.pagination>a:last-child {
+    font-weight: 600;
+}
