@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search bar # 1</title>
+    <!-- CDN for remix icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Libk tot the css file -->
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="input-fields">
+        <div class="row justify-center w-90">
+          <input
+            type="text"
+            class="form-control w-50"
+            placeholder="Stichwort, Jobtite!"
+          />
+          <input
+            type="text"
+            class="form-control w-50"
+            placeholder="Ort"
+            style="flex-grow: 1"
+          />
+        </div>
+
+        <!-- Second row of inputs; -->
+        <div class="row align-items-center mt-2">
+          <div class="row justify-center w-90">
+            <div class="dropdown w-40">
+              <div>
+                <p>Branchen</p>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="dropdown-options">
+                <div>
+                  <input type="checkbox" id="automation" />
+                  <label for="automation">Automative</label>
+                </div>
+                <div><input type="checkbox" /> <label>Aviation</label></div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Banken und Finanzdienstleister </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Building & Constructions </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Chemicals</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Consumer Electronics & High Tech</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Consumer Goods </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Health Care </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Industrial Services </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Industrial Goods & Machine Industry </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Insurance</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Life Science </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Logistik</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Media</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Medical Devices & Technology </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Metals & Mining </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Oil & Gas </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Paper & Packaging </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Public Sector </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Rail </label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Retail</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Telecommunication</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Travel</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Utilities</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Other</label>
+                </div>
+
+                <div class="border-top"></div>
+
+                <button class="btn btn-primary">Filter anwenden</button>
+              </div>
+            </div>
+            <div class="dropdown w-30 second-dropdown">
+              <div>
+                <p>Joblevel</p>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="dropdown-options">
+                <div>
+                  <input type="checkbox" id="automation" />
+                  <label for="automation">Berufseinstieg</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Berufserfahrung</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Personalverantwortung</label>
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <label>Executive </label>
+                </div>
+
+                <div class="border-top"></div>
+
+                <button class="btn btn-primary">Filter anwenden</button>
+              </div>
+            </div>
+            <!-- cancel dropdown -->
+            <div class="dropdown w-30 second-dropdown">
+              <div>
+                <p>Joblevel</p>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="dropdown-options">
+                <p class="fw-600">Bruttogehalt jährlich</p>
+
+                <div class="row align-items-center justify-space-between mt-2">
+                  <button class="btn btn-dark-primary">> 50.000</button>
+                  <button class="btn btn-dark-primary">>200.000</button>
+                </div>
+
+                <div>
+                  <div class="container">
+                    <div class="slider-track"></div>
+                    <input
+                      type="range"
+                      min="50"
+                      max="200"
+                      value="50"
+                      id="slider-1"
+                      oninput="slideOne()"
+                    />
+                    <input
+                      type="range"
+                      min="50"
+                      max="200"
+                      value="200"
+                      id="slider-2"
+                      oninput="slideTwo()"
+                    />
+                  </div>
+                </div>
+
+                <div class="border-top"></div>
+
+                <button class="btn btn-primary">Filter anwenden</button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button class="searchBtn">Search</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--  Custom JS Script -->
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
