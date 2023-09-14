@@ -27,7 +27,7 @@ body {
 .input-fields {
   background-color: #eee;
   margin-top: 5vw;
-  padding: 30px 10vw;
+  padding: 30px 6vw;
 }
 
 .form-control {
@@ -63,6 +63,9 @@ body {
   align-items: center;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
 /* utility classes */
 
 .w-90 {
@@ -71,6 +74,10 @@ body {
 
 .w-20 {
   width: calc(20% - 10px);
+}
+
+.w-25 {
+  width: calc(25% - 10px);
 }
 
 .w-30 {
@@ -373,6 +380,7 @@ input[type="range"]:active::-webkit-slider-thumb {
   }
 }
 
+/* ########################### CHECKBOX ################## */
 /* Hide the default checkbox input */
 .custom-checkbox input[type="checkbox"] {
   display: none;
@@ -382,6 +390,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 .custom-checkbox {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 /* Style the checkbox */
@@ -393,6 +402,13 @@ input[type="range"]:active::-webkit-slider-thumb {
   border: 1px solid #ccc;
   margin-right: 10px;
   cursor: pointer;
+  flex: 0.1;
+}
+
+@media (min-width: 1400px) {
+  .custom-checkbox .checkmark {
+    flex: 0.07;
+  }
 }
 
 /* Change the background color when the checkbox is checked */
@@ -403,4 +419,37 @@ input[type="range"]:active::-webkit-slider-thumb {
 /* Style the label text */
 .custom-checkbox .label-text {
   vertical-align: middle;
+  flex: 0.9;
+}
+
+/* ############################ RADIO BUTTONS ###################### */
+
+/* Style for the custom radio button */
+.custom-radio {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px; /* Adjust as needed for your design */
+  cursor: pointer;
+}
+
+/* Hide the default radio input */
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+/* Style for the radio mark */
+.custom-radio .radiomark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #f2f2f2; /* Default background color */
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+/* Change the background color when the radio button is checked */
+.custom-radio input[type="radio"]:checked + .radiomark {
+  background-color: #58a09a; /* Color when checked */
 }

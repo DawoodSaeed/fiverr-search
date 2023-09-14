@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search bar # 1</title>
+    <!-- CDN for remix icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Libk tot the css file -->
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="input-fields">
+        <div class="row justify-center w-90">
+          <input
+            type="text"
+            class="form-control w-50"
+            placeholder="Stichwort, Jobtitel"
+          />
+          <input
+            type="text"
+            class="form-control w-50"
+            placeholder="Ort"
+            style="flex-grow: 1"
+          />
+        </div>
+
+        <!-- Second row of inputs; -->
+        <div class="row align-items-center mt-2">
+          <div class="row justify-center w-90 d-none">
+            <div class="dropdown w-25 flex-grow">
+              <div>
+                <p>Branchen</p>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="dropdown-options">
+                <div class="dropdown-upper">
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Automotive</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Aviation</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text"
+                        >Banken und Finanzdienstleister</span
+                      >
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Building & Constructions</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Chemicals</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text"
+                        >Consumer Electronics & High Tech</span
+                      >
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Consumer Goods</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Health Care</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Industrial Services</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text"
+                        >Industrial Goods & Machine Industry</span
+                      >
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Insurance</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Life Science</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Logistik</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Media</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text"
+                        >Medical Devices & Technology</span
+                      >
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Metals & Mining</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Oil & Gas</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Paper & Packaging</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Public Sector</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Rail</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Retail</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Telecommunication</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Travel</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Utilities</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="custom-checkbox">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                      <span class="label-text">Other</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="dropdown-lower">
+                  <div class="border-top"></div>
+                  <button class="btn btn-primary">Filter anwenden</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Dropdown -->
+            <div class="dropdown w-25 second-dropdown">
+              <div>
+                <p>Joblevel</p>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="dropdown-options">
+                <label class="custom-checkbox">
+                  <input type="checkbox" id="automation" />
+                  <span class="checkmark"></span>
+                  <span class="label-text">Berufseinstieg</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  <span class="label-text">Berufserfahrung</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  <span class="label-text">Personalverantwortung</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  <span class="label-text">Executive</span>
+                </label>
+
+                <div class="border-top"></div>
+
+                <button class="btn btn-primary">Filter anwenden</button>
+              </div>
+            </div>
+            <!-- Third Dropdown with the custom range -->
+            <div class="dropdown w-25 second-dropdown">
+              <div>
+                <p>Gehaltslevel</p>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="dropdown-options">
+                <p class="fw-600">Bruttogehalt jährlich</p>
+
+                <div class="row align-items-center justify-space-between mt-2">
+                  <button class="btn btn-dark-primary">> 50.000</button>
+                  <button class="btn btn-dark-primary">>200.000</button>
+                </div>
+
+                <div>
+                  <div class="container">
+                    <div class="slider-track"></div>
+                    <input
+                      type="range"
+                      min="50"
+                      max="200"
+                      value="50"
+                      id="slider-1"
+                      oninput="slideOne()"
+                    />
+                    <input
+                      type="range"
+                      min="50"
+                      max="200"
+                      value="200"
+                      id="slider-2"
+                      oninput="slideTwo()"
+                    />
+                  </div>
+                </div>
+
+                <div class="border-top"></div>
+
+                <button class="btn btn-primary">Filter anwenden</button>
+              </div>
+            </div>
+
+            <!-- Fourth Dropdown with radio buttons-->
+            <div class="dropdown w-25 second-dropdown">
+              <div>
+                <p>Joblevel</p>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="dropdown-options">
+                <label class="custom-radio">
+                  <input type="radio" id="automation" name="radio-group" />
+                  <span class="radiomark"></span>
+                  <span class="label-text">Berufseinstieg</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" id="automation" name="radio-group" />
+                  <span class="radiomark"></span>
+                  <span class="label-text">Berufserfahrung</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" id="automation" name="radio-group" />
+                  <span class="radiomark"></span>
+                  <span class="label-text">Personalverantwortung</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" id="automation" name="radio-group" />
+                  <span class="radiomark"></span>
+                  <span class="label-text">Executive</span>
+                </label>
+
+                <div class="border-top"></div>
+
+                <button class="btn btn-primary">Filter anwenden</button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button class="searchBtn">Search</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="pagination">
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">7</a>
+      <a href="#">8</a>
+      <a href="#">9</a>
+      <a href="#">10</a>
+      <a href="#">11</a>
+      <a href="#">12</a>
+      <a href="#">13</a>
+      <a href="#">14</a>
+      <a href="#">15</a>
+      <a href="">Weiter</a>
+    </div>
+
+    <!--  Custom JS Script -->
+    <script src="../scripts/index.js"></script>
+  </body>
+</html>
