@@ -198,6 +198,7 @@ body {
 
 .second-dropdown > .dropdown-options > label {
   padding-bottom: 10px;
+  font-weight: 500;
 }
 
 .active {
@@ -402,11 +403,14 @@ input[type="range"]:active::-webkit-slider-thumb {
   border: 1px solid #ccc;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.page2 .checkmark {
   flex: 0.1;
 }
 
 @media (min-width: 1400px) {
-  .custom-checkbox .checkmark {
+  .page2 .checkmark {
     flex: 0.07;
   }
 }
@@ -419,6 +423,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 /* Style the label text */
 .custom-checkbox .label-text {
   vertical-align: middle;
+}
+
+.page2 .label-text {
   flex: 0.9;
 }
 
