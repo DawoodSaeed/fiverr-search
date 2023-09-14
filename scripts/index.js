@@ -1,3 +1,10 @@
+function closeAllDropdowns() {
+  dropdowns.forEach((dropdown) => {
+    const dropdownOptions = dropdown.querySelector(".dropdown-options");
+    dropdownOptions.classList.remove("active");
+  });
+}
+
 const dropdowns = document.querySelectorAll(".dropdown");
 dropdowns.forEach((dropdown) => {
   dropdown.addEventListener(
@@ -7,6 +14,7 @@ dropdowns.forEach((dropdown) => {
       if (dropdownOptions.classList.contains("active")) {
         dropdownOptions.classList.remove("active");
       } else {
+        closeAllDropdowns();
         dropdownOptions.classList.add("active");
       }
     },
@@ -20,10 +28,18 @@ dropdowns.forEach((dropdown) => {
   });
 });
 
+document.addEventListener("click", function (event) {
+  if (!event.target.closest(".dropdown")) {
+    closeAllDropdowns();
+  }
+});
+
+let i = 1;
+
 //  for the range inputs;
 window.onload = function () {
-  slideOne();
-  slideTwo();
+  slideOne(i);
+  slideTwo(i);
 };
 
 let sliderOne = document.getElementById("slider-1");
@@ -33,20 +49,29 @@ let displayValTwo = document.getElementById("range2");
 let minGap = 0;
 let sliderTrack = document.querySelector(".slider-track");
 let sliderMaxValue = 200; // Set the maximum value to 200
-
-function slideOne() {
+function slideOne(i) {
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
-  displayValOne.textContent = sliderOne.value;
+  if (i == 1) {
+    displayValOne.textContent = `> ${sliderOne.value}`;
+    i++;
+  } else {
+    displayValOne.textContent = sliderOne.value;
+  }
   fillColor();
 }
 
-function slideTwo() {
+function slideTwo(i) {
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
     sliderTwo.value = parseInt(sliderOne.value) + minGap;
   }
-  displayValTwo.textContent = sliderTwo.value;
+  if (i == 1) {
+    displayValTwo.textContent = `< ${sliderTwo.value}`;
+    i++;
+  } else {
+    displayValTwo.textContent = sliderTwo.value;
+  }
   fillColor();
 }
 

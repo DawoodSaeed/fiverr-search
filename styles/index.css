@@ -404,6 +404,7 @@ input[type="range"]:active::-webkit-slider-thumb {
   border: 1px solid #ccc;
   margin-right: 10px;
   cursor: pointer;
+  position: relative;
 }
 
 .page2 .checkmark {
@@ -428,6 +429,19 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .page2 .label-text {
   flex: 0.9;
+}
+
+/* Display the tick mark when the checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+  content: "\2713"; /* Unicode character for a checkmark */
+  display: inline-block; /* Display the tick mark when checked */
+  color: #fff; /* Color of the tick mark when checked */
+  font-size: 16px; /* Adjust the size of the tick mark */
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(15deg);
+  font: inherit;
 }
 
 /* ############################ RADIO BUTTONS ###################### */
