@@ -3,373 +3,404 @@
 
 /*  CSS Boilerplate */
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
-    font-family: "Quicksand", sans-serif;
-    background-color: #fff;
+  width: 100%;
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+  background-color: #fff;
 }
 
 /* Define a CSS variable */
 :root {
-    --primary: #58a09a;
-    --border-color: #ccc;
-    --border-radius: 10px;
+  --primary: #58a09a;
+  --border-color: #ccc;
+  --border-radius: 10px;
+  --bg-color: #f7f7f7;
 }
 
 .input-fields {
-    background-color: #eee;
-    margin-top: 5vw;
-    padding: 30px 15px;
+  background-color: #eee;
+  margin-top: 5vw;
+  padding: 30px 10vw;
 }
 
 .form-control {
-    padding: 16px;
-    border-radius: var(--border-radius);
-    border: 1px solid var(--border-color);
-    font: inherit;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  font: inherit;
+  background-color: var(--bg-color);
 }
 
-.form-control:focus {
-    border-color: var(--border-color);
-    outline: none;
+.form-control:focus,
+.form-control:active {
+  border-color: var(--border-color);
+  outline: none;
+  color: var(--primary);
 }
 
 .row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .justify-space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 /* utility classes */
 
 .w-90 {
-    width: 90%;
+  width: 90%;
 }
 
 .w-20 {
-    width: calc(20% - 10px);
+  width: calc(20% - 10px);
 }
 
 .w-30 {
-    width: 30%;
+  width: 30%;
 }
 
 .w-40 {
-    width: calc(40% - 20px);
+  width: calc(40% - 20px);
 }
 
 .w-50 {
-    width: calc(50% - 20px);
+  width: calc(50% - 20px);
 }
 
 .mt-2 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-
-
 
 /* dropdown creaton */
 .dropdown {
-    position: relative;
+  position: relative;
 }
 
-.dropdown>div:first-child {
-    cursor: pointer;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #888;
+.dropdown > div:first-child {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #888;
 }
 
 .dropdown i {
-    color: var(--primary);
-    font-size: 1.2vw;
-    font-weight: normal;
-    cursor: pointer;
+  color: var(--primary);
+  font-size: 1.2vw;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 .dropdown-options {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    background-color: #eee;
-    padding: 20px;
-    width: 100%;
-    overflow-y: scroll;
-    height: 50vh;
-    display: none;
-    transition: all 0.5s ease;
-    opacity: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  width: 100%;
+  display: none;
+  transition: all 0.5s ease;
+  opacity: 0;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
-
-/* Scroll bar */
-.dropdown-options::-webkit-scrollbar {
-    width: 8px;
+.dropdown_not_first {
+  padding: 20px;
 }
-
-.dropdown-options::-webkit-scrollbar-track {
-    background: #eee;
-}
-
-.dropdown-options::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 4px;
-}
-
-.dropdown-options::-webkit-scrollbar-thumb:hover {
-    background: #999;
-}
-
 /* Scroll bar ends here */
 
-
-
-
-.dropdown-options>div {
-    padding-bottom: 10px;
-    cursor: pointer;
-    width: 100%;
+.dropdown-options > .dropdown-upper {
+  height: 50vh;
+  padding: 20px;
+  overflow-y: scroll;
 }
 
-.dropdown-options>div>input[type="checkbox"] {
-    border-color: var(--border-color);
-    margin-right: 10px;
+.dropdown-options > .dropdown-upper::-webkit-scrollbar {
+  width: 8px;
 }
 
-.dropdown-options>div>input[type="checkbox"]:checked {
-    background-color: #013220;
+.dropdown-options > .dropdown-upper::-webkit-scrollbar-track {
+  background: #eee;
 }
 
-.dropdown-options>div>label {
-    font-size: 17px;
-    font-weight: 500;
+.dropdown-options > .dropdown-upper::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
 }
 
-
-.dropdown-options>.border-top {
-    width: 90%;
-    height: 10px;
-    margin: auto;
-    background: #eee;
-    margin-top: 10px;
-    border-top: 1px solid var(--border-color);
+.dropdown-options > .dropdown-upper::-webkit-scrollbar-thumb:hover {
+  background: #999;
 }
 
+.dropdown-options > .dropdown-upper > div {
+  padding-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+}
 
-.second-dropdown>.dropdown-options {
-    overflow: hidden;
-    height: auto;
+.dropdown-options .dropdown-upper input[type="checkbox"] {
+  border-color: var(--border-color);
+  margin-right: 10px;
+}
+
+.dropdown-options .dropdown-upper label {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.dropdown-options .border-top {
+  width: 90%;
+  height: 10px;
+  margin: auto;
+  margin-top: 10px;
+  border-top: 1px solid var(--border-color);
+}
+
+.dropdown-options .dropdown-lower {
+  padding: 20px;
+  text-align: center;
+}
+
+.second-dropdown > .dropdown-options {
+  overflow: hidden;
+  height: auto;
+  padding: 20px;
+}
+
+.second-dropdown > .dropdown-options > label {
+  padding-bottom: 10px;
 }
 
 .active {
-    display: flex;
-    opacity: 1;
+  display: flex;
+  opacity: 1;
 }
-
 
 .btn {
-    padding: 10px;
-    border: none;
-    font: inherit;
-    cursor: pointer;
-    border-radius: 5px;
-    color: #fff;
-    transition: all 0.3s ease;
+  padding: 10px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
-
 .btn:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .btn-primary {
-    background-color: var(--primary);
-    width: 70%;
-    margin: auto;
+  background-color: var(--primary);
+  width: 70%;
+  margin: auto;
 }
 
 .btn-dark-primary {
-    background-color: #013220;
+  background-color: #013220;
 }
 
-
 .fw-600 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .searchBtn {
-    border: 1px solid var(--border-color);
-    padding: 12px;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    color: #666;
-    font: inherit;
-    transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  padding: 12px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  color: #666;
+  font: inherit;
+  transition: all 0.3s ease;
 }
 
 .searchBtn:hover {
-    background-color: var(--primary);
-    color: #fff;
+  background-color: var(--primary);
+  color: #fff;
 }
 
 /*  custom range  */
 
-
-
 .container {
-    position: relative;
-    width: 100%;
-    height: 100px;
+  position: relative;
+  width: 100%;
+  height: 100px;
 }
 
 input[type="range"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 100%;
-    outline: none;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    background-color: transparent;
-    pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
 }
 
 .slider-track {
-    width: 100%;
-    height: 5px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    border-radius: 5px;
-
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    height: 5px;
+  -webkit-appearance: none;
+  height: 5px;
 }
 
 input[type="range"]::-moz-range-track {
-    -moz-appearance: none;
-    height: 5px;
+  -moz-appearance: none;
+  height: 5px;
 }
 
 input[type="range"]::-ms-track {
-    appearance: none;
-    height: 5px;
+  appearance: none;
+  height: 5px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 1.7em;
-    width: 1.7em;
-    background-color: #013220;
-    cursor: pointer;
-    margin-top: -9px;
-    pointer-events: auto;
-    border-radius: 50%;
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: #013220;
+  cursor: pointer;
+  margin-top: -9px;
+  pointer-events: auto;
+  border-radius: 50%;
 }
 
 input[type="range"]::-moz-range-thumb {
-    -webkit-appearance: none;
-    height: 1.7em;
-    width: 1.7em;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: var(--primary);
-    pointer-events: auto;
-    border: none;
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--primary);
+  pointer-events: auto;
+  border: none;
 }
 
 input[type="range"]::-ms-thumb {
-    appearance: none;
-    height: 1.7em;
-    width: 1.7em;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: var(--primary);
-    pointer-events: auto;
+  appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--primary);
+  pointer-events: auto;
 }
 
 input[type="range"]:active::-webkit-slider-thumb {
-    background-color: #ffffff;
-    border: 1px solid var(--primary);
+  background-color: #ffffff;
+  border: 1px solid var(--primary);
 }
-
 
 .pagination {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    display: flex;
-    gap: 10px;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  display: flex;
+  gap: 10px;
+  transform: translateX(-50%);
 }
 
-
-.pagination>a {
-    text-decoration: none;
-    color: #000;
-    font-weight: normal;
+.pagination > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: normal;
 }
 
-.pagination>a.active {
-    font-weight: 600;
-    text-decoration: underline;
+.pagination > a.active {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
-.pagination>a:last-child {
-    font-weight: 600;
+.pagination > a:last-child {
+  font-weight: 600;
 }
-
 
 /* Media Query */
 
-@media (max-width:600px) {
-    .row {
-        flex-direction: column;
-    }
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
 
-    .form-control {
-        width: 100%;
-    }
+  .form-control {
+    width: 100%;
+  }
 
-    .input-fields {
-        padding: 25px 20px;
-    }
+  .input-fields {
+    padding: 25px 20px;
+  }
 
-    .input-fields>div:first-of-type {
-        width: 100%;
-    }
+  .input-fields > div:first-of-type {
+    width: 100%;
+  }
 
-    .d-none {
-        display: none;
-    }
+  .d-none {
+    display: none;
+  }
+}
+
+/* Hide the default checkbox input */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Define the custom checkbox container */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the checkbox */
+.custom-checkbox .checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #f2f2f2; /* Default background color */
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Change the background color when the checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #58a09a; /* Color when checked */
+}
+
+/* Style the label text */
+.custom-checkbox .label-text {
+  vertical-align: middle;
 }
