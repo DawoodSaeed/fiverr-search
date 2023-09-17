@@ -520,7 +520,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 .job_advertisement>div {
     width: 30%;
     min-width: 30%;
-    background-color: var(--bg-color);
+    background-color: #f9f9f7;
     padding: 50px 30px;
     flex-grow: 1;
     transition: all 0.4s ease-in;
