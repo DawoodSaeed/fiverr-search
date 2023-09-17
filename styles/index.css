@@ -21,18 +21,18 @@ body {
     --primary: #58a09a;
     --border-color: #ccc;
     --border-radius: 10px;
-    --bg-color: #f9f9f7;
+    --bg-color: #fff;
     --star-color-hover: yellow;
 }
 
 .input-fields {
-    background-color: #eee;
+    background-color: #f9f9f7;
     margin-top: 5vw;
     padding: 30px 6vw;
 }
 
 .form-control {
-    padding: 16px;
+    padding: 14px;
     border-radius: var(--border-radius);
     border: 1px solid var(--border-color);
     font: inherit;
@@ -107,13 +107,18 @@ body {
 .dropdown>div:first-child {
     cursor: pointer;
     background-color: var(--bg-color);
-    padding: 10px;
+    padding: 14px;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #888;
+}
+
+.dropdown>div:first-child p{
+  font-size: 14px;
+  color: #454343;
 }
 
 .dropdown i {
@@ -127,7 +132,7 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    background-color: var(--bg-color);
+    background-color: #f9f9f7;
     width: 100%;
     display: none;
     transition: all 0.5s ease;
