@@ -551,9 +551,9 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 }
 
-.job_posting-row1 i:hover {
+/* .job_posting-row1 i:hover {
     font-weight: 600;
-}
+} */
 
 .job_posting-row2 h2 {
     font-size: 22px;
@@ -580,4 +580,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .star_icon {
     font-size: 25px;
+}
+
+
+.ri-star-fill:before {
+  content: "\f186";
+  color: var(--primary);
 }
