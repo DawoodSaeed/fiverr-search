@@ -101,7 +101,7 @@ body {
 /* dropdown creaton */
 .dropdown {
     position: relative;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
 }
 
 .dropdown>div:first-child {
