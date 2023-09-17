@@ -80,3 +80,25 @@ function fillColor() {
   percent2 = ((sliderTwo.value - 50) / (sliderMaxValue - 50)) * 100;
   sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}%, #58a09a ${percent1}%, #58a09a ${percent2}%, #dadae5 ${percent2}%)`;
 }
+
+// const starIcons = document.querySelectorAll(".star_icon");
+
+// starIcons.forEach((starIcon) => {
+//   starIcon.addEventListener("click", function () {
+//     this.classList.toggle("dark-yellow-bg");
+//   });
+// });
+
+const starIcons = document.querySelectorAll(".star_icon");
+
+starIcons.forEach((starIcon) => {
+  starIcon.addEventListener("click", function () {
+    if (this.classList.contains("ri-star-line")) {
+      this.classList.remove("ri-star-line");
+      this.classList.add("ri-star-fill");
+    } else {
+      this.classList.remove("ri-star-fill");
+      this.classList.add("ri-star-line");
+    }
+  });
+});

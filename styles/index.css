@@ -3,475 +3,581 @@
 
 /*  CSS Boilerplate */
 * {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  width: 100%;
-  height: 100%;
-  font-family: "Quicksand", sans-serif;
-  background-color: #fff;
+    width: 100%;
+    height: 100%;
+    font-family: "Quicksand", sans-serif;
+    background-color: #fff;
 }
 
 /* Define a CSS variable */
 :root {
-  --primary: #58a09a;
-  --border-color: #ccc;
-  --border-radius: 10px;
-  --bg-color: #fff;
+    --primary: #58a09a;
+    --border-color: #ccc;
+    --border-radius: 10px;
+    --bg-color: #f9f9f7;
+    --star-color-hover: yellow;
 }
 
 .input-fields {
-  background-color: #eee;
-  margin-top: 5vw;
-  padding: 30px 6vw;
+    background-color: #eee;
+    margin-top: 5vw;
+    padding: 30px 6vw;
 }
 
 .form-control {
-  padding: 16px;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  font: inherit;
-  background-color: var(--bg-color);
+    padding: 16px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    font: inherit;
+    background-color: var(--bg-color);
 }
 
 .form-control:focus,
 .form-control:active {
-  border-color: var(--border-color);
-  outline: none;
-  color: var(--primary);
+    border-color: var(--border-color);
+    outline: none;
+    color: var(--primary);
 }
 
 .row {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .justify-space-between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .justify-center {
-  justify-content: center;
+    justify-content: center;
 }
 
 .align-items-center {
-  align-items: center;
+    align-items: center;
 }
 
 .flex-grow {
-  flex-grow: 1;
+    flex-grow: 1;
 }
+
 /* utility classes */
 
 .w-90 {
-  width: 90%;
+    width: 90%;
 }
 
 .w-20 {
-  width: calc(20% - 10px);
+    width: calc(20% - 10px);
 }
 
 .w-25 {
-  width: calc(25% - 10px);
+    width: calc(25% - 10px);
 }
 
 .w-30 {
-  width: 30%;
+    width: 30%;
 }
 
 .w-40 {
-  width: calc(40% - 20px);
+    width: calc(40% - 20px);
 }
 
 .w-50 {
-  width: calc(50% - 20px);
+    width: calc(50% - 20px);
 }
 
 .mt-2 {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 /* dropdown creaton */
 .dropdown {
-  position: relative;
+    position: relative;
+    background-color: var(--bg-color);
 }
 
-.dropdown > div:first-child {
-  cursor: pointer;
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #888;
+.dropdown>div:first-child {
+    cursor: pointer;
+    background-color: var(--bg-color);
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #888;
 }
 
 .dropdown i {
-  color: var(--primary);
-  font-size: 1.2vw;
-  font-weight: normal;
-  cursor: pointer;
+    color: var(--primary);
+    font-size: 1.2vw;
+    font-weight: normal;
+    cursor: pointer;
 }
 
 .dropdown-options {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bg-color);
-  width: 100%;
-  display: none;
-  transition: all 0.5s ease;
-  opacity: 0;
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    width: 100%;
+    display: none;
+    transition: all 0.5s ease;
+    opacity: 0;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
 }
 
 .dropdown_not_first {
-  padding: 20px;
+    padding: 20px;
 }
+
 /* Scroll bar ends here */
 
-.dropdown-options > .dropdown-upper {
-  height: 50vh;
-  padding: 20px;
-  overflow-y: scroll;
+.dropdown-options>.dropdown-upper {
+    height: 50vh;
+    padding: 20px;
+    overflow-y: scroll;
 }
 
-.dropdown-options > .dropdown-upper::-webkit-scrollbar {
-  width: 8px;
+.dropdown-options>.dropdown-upper::-webkit-scrollbar {
+    width: 8px;
 }
 
-.dropdown-options > .dropdown-upper::-webkit-scrollbar-track {
-  background: #eee;
+.dropdown-options>.dropdown-upper::-webkit-scrollbar-track {
+    background: #eee;
 }
 
-.dropdown-options > .dropdown-upper::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 4px;
+.dropdown-options>.dropdown-upper::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
 }
 
-.dropdown-options > .dropdown-upper::-webkit-scrollbar-thumb:hover {
-  background: #999;
+.dropdown-options>.dropdown-upper::-webkit-scrollbar-thumb:hover {
+    background: #999;
 }
 
-.dropdown-options > .dropdown-upper > div {
-  padding-bottom: 10px;
-  cursor: pointer;
-  width: 100%;
+.dropdown-options>.dropdown-upper>div {
+    padding-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
 }
 
 .dropdown-options .dropdown-upper input[type="checkbox"] {
-  border-color: var(--border-color);
-  margin-right: 10px;
+    border-color: var(--border-color);
+    margin-right: 10px;
 }
 
 .dropdown-options .dropdown-upper label {
-  font-size: 17px;
-  font-weight: 500;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .dropdown-options .border-top {
-  width: 90%;
-  height: 10px;
-  margin: auto;
-  margin-top: 10px;
-  border-top: 1px solid var(--border-color);
+    width: 90%;
+    height: 10px;
+    margin: auto;
+    margin-top: 10px;
+    border-top: 1px solid var(--border-color);
 }
 
 .dropdown-options .dropdown-lower {
-  padding: 20px;
-  text-align: center;
+    padding: 20px;
+    text-align: center;
 }
 
-.second-dropdown > .dropdown-options {
-  overflow: hidden;
-  height: auto;
-  padding: 20px;
+.second-dropdown>.dropdown-options {
+    overflow: hidden;
+    height: auto;
+    padding: 20px;
 }
 
-.second-dropdown > .dropdown-options > label {
-  padding-bottom: 10px;
-  font-weight: 500;
+.second-dropdown>.dropdown-options>label {
+    padding-bottom: 10px;
+    font-weight: 500;
 }
 
 .active {
-  display: flex;
-  opacity: 1;
+    display: flex;
+    opacity: 1;
 }
 
 .btn {
-  padding: 10px;
-  border: none;
-  font: inherit;
-  cursor: pointer;
-  border-radius: 5px;
-  color: #fff;
-  transition: all 0.3s ease;
+    padding: 10px;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 .btn-primary {
-  background-color: var(--primary);
-  width: 70%;
-  margin: auto;
+    background-color: var(--primary);
+    width: 70%;
+    margin: auto;
 }
 
 .btn-dark-primary {
-  background-color: #013220;
+    background-color: #013220;
 }
 
 .fw-600 {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .searchBtn {
-  border: 1px solid var(--border-color);
-  padding: 12px;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  color: #666;
-  font: inherit;
-  background-color: var(--bg-color);
-  transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    color: #666;
+    font: inherit;
+    background-color: #fff;
+    transition: all 0.3s ease;
 }
 
 .searchBtn:hover {
-  background-color: var(--primary);
-  color: #fff;
+    background-color: var(--primary);
+    color: #fff;
 }
 
 /*  custom range  */
 
 .container {
-  position: relative;
-  width: 100%;
-  height: 100px;
+    position: relative;
+    width: 100%;
+    height: 100px;
 }
 
 input[type="range"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  outline: none;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  background-color: transparent;
-  pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
 }
 
 .slider-track {
-  width: 100%;
-  height: 5px;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  border-radius: 5px;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  height: 5px;
+    -webkit-appearance: none;
+    height: 5px;
 }
 
 input[type="range"]::-moz-range-track {
-  -moz-appearance: none;
-  height: 5px;
+    -moz-appearance: none;
+    height: 5px;
 }
 
 input[type="range"]::-ms-track {
-  appearance: none;
-  height: 5px;
+    appearance: none;
+    height: 5px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 1.7em;
-  width: 1.7em;
-  background-color: #013220;
-  cursor: pointer;
-  margin-top: -9px;
-  pointer-events: auto;
-  border-radius: 50%;
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    background-color: #013220;
+    cursor: pointer;
+    margin-top: -9px;
+    pointer-events: auto;
+    border-radius: 50%;
 }
 
 input[type="range"]::-moz-range-thumb {
-  -webkit-appearance: none;
-  height: 1.7em;
-  width: 1.7em;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: var(--primary);
-  pointer-events: auto;
-  border: none;
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--primary);
+    pointer-events: auto;
+    border: none;
 }
 
 input[type="range"]::-ms-thumb {
-  appearance: none;
-  height: 1.7em;
-  width: 1.7em;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: var(--primary);
-  pointer-events: auto;
+    appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--primary);
+    pointer-events: auto;
 }
 
 input[type="range"]:active::-webkit-slider-thumb {
-  background-color: #ffffff;
-  border: 1px solid var(--primary);
+    background-color: #ffffff;
+    border: 1px solid var(--primary);
 }
 
 .pagination {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.pagination>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+}
+
+.pagination>a.active {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.pagination>a:last-child {
+    font-weight: 600;
+}
+
+
+
+.page2Pagination {
   position: absolute;
   bottom: 5%;
   left: 50%;
-  display: flex;
-  gap: 10px;
   transform: translateX(-50%);
-}
-
-.pagination > a {
-  text-decoration: none;
-  color: #000;
-  font-weight: normal;
-}
-
-.pagination > a.active {
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.pagination > a:last-child {
-  font-weight: 600;
 }
 
 /* Media Query */
 
 @media (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
+    .row {
+        flex-direction: column;
+    }
 
-  .form-control {
-    width: 100%;
-  }
+    .form-control {
+        width: 100%;
+    }
 
-  .input-fields {
-    padding: 25px 20px;
-  }
+    .input-fields {
+        padding: 25px 20px;
+    }
 
-  .input-fields > div:first-of-type {
-    width: 100%;
-  }
+    .input-fields>div:first-of-type {
+        width: 100%;
+    }
 
-  .d-none {
-    display: none;
-  }
+    .d-none {
+        display: none;
+    }
 }
 
 /* ########################### CHECKBOX ################## */
 /* Hide the default checkbox input */
 .custom-checkbox input[type="checkbox"] {
-  display: none;
+    display: none;
 }
 
 /* Define the custom checkbox container */
 .custom-checkbox {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 /* Style the checkbox */
 .custom-checkbox .checkmark {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #fff; /* Default background color */
-  border: 1px solid #ccc;
-  margin-right: 10px;
-  cursor: pointer;
-  position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    /* Default background color */
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
 }
 
 .page2 .checkmark {
-  flex: 0.1;
+    flex: 0.1;
 }
 
 @media (min-width: 1400px) {
-  .page2 .checkmark {
-    flex: 0.07;
-  }
+    .page2 .checkmark {
+        flex: 0.07;
+    }
 }
 
 /* Change the background color when the checkbox is checked */
-.custom-checkbox input[type="checkbox"]:checked + .checkmark {
-  background-color: #58a09a; /* Color when checked */
+.custom-checkbox input[type="checkbox"]:checked+.checkmark {
+    background-color: #58a09a;
+    /* Color when checked */
 }
 
 /* Style the label text */
 .custom-checkbox .label-text {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 .page2 .label-text {
-  flex: 0.9;
+    flex: 0.9;
 }
 
 /* Display the tick mark when the checkbox is checked */
-.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
-  content: "\2713"; /* Unicode character for a checkmark */
-  display: inline-block; /* Display the tick mark when checked */
-  color: #fff; /* Color of the tick mark when checked */
-  font-size: 16px; /* Adjust the size of the tick mark */
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  transform: translate(-50%, -50%) rotate(15deg);
-  font: inherit;
+.custom-checkbox input[type="checkbox"]:checked+.checkmark::before {
+    content: "\2713";
+    /* Unicode character for a checkmark */
+    display: inline-block;
+    /* Display the tick mark when checked */
+    color: #fff;
+    /* Color of the tick mark when checked */
+    font-size: 16px;
+    /* Adjust the size of the tick mark */
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(15deg);
+    font: inherit;
 }
 
 /* ############################ RADIO BUTTONS ###################### */
 
 /* Style for the custom radio button */
 .custom-radio {
-  display: inline-block;
-  position: relative;
-  padding-left: 30px; /* Adjust as needed for your design */
-  cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    /* Adjust as needed for your design */
+    cursor: pointer;
 }
 
 /* Hide the default radio input */
 .custom-radio input[type="radio"] {
-  display: none;
+    display: none;
 }
 
 /* Style for the radio mark */
 .custom-radio .radiomark {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  background-color: #f2f2f2; /* Default background color */
-  border: 1px solid #ccc;
-  border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #f2f2f2;
+    /* Default background color */
+    border: 1px solid #ccc;
+    border-radius: 50%;
 }
 
 /* Change the background color when the radio button is checked */
-.custom-radio input[type="radio"]:checked + .radiomark {
-  background-color: #58a09a; /* Color when checked */
+.custom-radio input[type="radio"]:checked+.radiomark {
+    background-color: #58a09a;
+    /* Color when checked */
+}
+
+
+
+.job_advertisement {
+    padding: 30px 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    gap: 30px;
+}
+
+
+.job_advertisement>div {
+    width: 30%;
+    min-width: 30%;
+    background-color: var(--bg-color);
+    padding: 50px 30px;
+    flex-grow: 1;
+    transition: all 0.4s ease-in;
+}
+
+@media (max-width:600px) {
+    .job_advertisement>div {
+        width: 100%;
+    }
+}
+
+
+.job_advertisement>div:hover {
+    transform: scale(1.03);
+}
+
+
+.job_advertisement .job_posting-row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.job_posting-row1 p {
+    color: #294245;
+}
+
+
+.job_posting-row1 i {
+    font-size: 21px;
+    cursor: pointer;
+    transition: all 0.3s ease'
+
+}
+
+.job_posting-row1 i:hover {
+    font-weight: 600;
+}
+
+.job_posting-row2 h2 {
+    font-size: 22px;
+    font-weight: 550;
+    margin-top: 25px;
+    color: #314E52;
+}
+
+
+
+.job_posting_row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+.job_posting_row .small_text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #294245;
+}
+
+.star_icon {
+    font-size: 25px;
 }
