@@ -139,6 +139,7 @@ body {
     opacity: 0;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
+    z-index: 5000;
 }
 
 .dropdown_not_first {
